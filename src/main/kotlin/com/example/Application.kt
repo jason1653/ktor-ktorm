@@ -14,9 +14,9 @@ fun main() {
 }
 
 fun Application.module() {
+    configureValidation()
     configureRouting()
     configureSerialization()
-    configureValidation()
 
 
 }
