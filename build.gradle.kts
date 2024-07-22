@@ -23,6 +23,10 @@ repositories {
 
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm")
+    implementation("org.ktorm:ktorm-core:4.1.0")
+    implementation("io.ktor:ktor-server-request-validation")
+    implementation("org.valiktor:valiktor-core:0.12.0")
+    implementation("io.ktor:ktor-server-status-pages")
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm")
     implementation("io.ktor:ktor-server-netty-jvm")

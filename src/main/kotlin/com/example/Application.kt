@@ -5,6 +5,7 @@ import com.example.plugins.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
+import io.ktor.server.plugins.requestvalidation.*
 import io.ktor.server.routing.*
 
 fun main() {
@@ -13,9 +14,9 @@ fun main() {
 }
 
 fun Application.module() {
+    configureRouting()
     configureSerialization()
+    configureValidation()
 
-    routing {
-        userRoutes()
-    }
+
 }
